@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
-def col_objects(data):
+def cleaning(data):
     
     replace_cut = {'Ideal': 1, 'Premium': 2, 'Very Good': 3, 'Good': 4,'Fair': 5 }
     for k, v in replace_cut.items():
@@ -22,15 +22,15 @@ def col_objects(data):
     corr.style.background_gradient(cmap='coolwarm')
     sns.heatmap(corr, linewidths=0.5, annot=True)
 
-
+    # Normalizamos las columnas
     features_norm = ['carat','table','depth']
     xyz = ['x','y','z']
     numerics = features_norm + xyz
-
     for col in numerics:
         mean = np.mean(data[col])
         std = np.std(data[col])
         data[col] = (data[col] - mean) / std 
+    # Eliminamos aquellas columnas con una correlación alta con 'price'    
     upper = corr.where(np.triu(np.ones(corr.shape), k=1).astype(np.bool))
     to_drop = [column for column in upper.columns if any(upper[column] > 0.95)]
 
