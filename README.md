@@ -1,4 +1,5 @@
 # diamonds-project
+![diamond](https://github.com/mariaversin/diamonds-project/blob/master/diamond2.jpg)
 
 El objetivo de este proyecto es entrenar un modelo que permita predecir el precio de los diamantes.
 
@@ -15,3 +16,5 @@ El objetivo de este proyecto es entrenar un modelo que permita predecir el preci
     - HistGradientBoostingRegressor**
     
     
+
+![diamond2](https://github.com/mariaversin/diamonds-project/blob/master/diamond.jpg)
