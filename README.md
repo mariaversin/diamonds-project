@@ -1,20 +1,24 @@
 # diamonds-project
 ![diamond](https://github.com/mariaversin/diamonds-project/blob/master/diamond2.jpg)
 
-El objetivo de este proyecto es entrenar un modelo que permita predecir el precio de los diamantes.
+**Goal** : to train a model that allows predicting the price of diamonds.
 
-1. Visualización de los datos:
+1. Data visualization:
 
-2. Limpieza de los datos:
+- Matplotlib and Seaborn 
+
+2. Data cleaning:
+
+- Pandas
 
 
-3. Modelos empleados:
-    - LinearRegression
-    - RandomForestRegressor
-    - Ridge
-    - GradientBoostingRegressor
-    - HistGradientBoostingRegressor**
-    
+3. Models used:
+- LinearRegression
+- RandomForestRegressor
+- Ridge
+- GradientBoostingRegressor
+- **HistGradientBoostingRegressor**
+
     
 
 ![diamond2](https://github.com/mariaversin/diamonds-project/blob/master/diamond.jpg)
